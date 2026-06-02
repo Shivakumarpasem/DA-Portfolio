@@ -2,228 +2,509 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Shivakumar Pasem | Technical Analytics & Systems Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivakumar Pasem -- AI/ML Engineer</title>
+  <meta name="description" content="AI/ML Engineer building production LLM systems across sports, finance, and healthcare." />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="hero-bg"></div>
+  <!-- Animated background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
 
-  <header>
-    <div class="header-top">
-      <a href="Shivakumar_IA.pdf" class="resume-float-btn" target="_blank">
-        <i class="fas fa-file-alt"></i> Resume
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <span class="brand-mark">SP</span>
+        <span class="brand-text">Shivakumar Pasem</span>
       </a>
-      <div class="header-icons">
-        <a href="https://www.linkedin.com/in/pasem-sk/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+      </div>
+      <div class="nav-cta">
+        <a href="https://github.com/Shivakumarpasem" target="_blank" class="nav-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/pasem-sk/" target="_blank" class="nav-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="Shivakumar_IA.pdf" target="_blank" class="nav-resume">Resume <i class="fas fa-arrow-up-right-from-square"></i></a>
       </div>
     </div>
+  </nav>
 
-    <img src="Shiva_pasem.jpg" alt="Shivakumar Pasem" class="profile-pic" />
+  <!-- HERO -->
+  <header id="hero">
+    <div class="hero-inner">
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        <span>Currently building at Cognier Inc</span>
+      </div>
 
-    <div class="intro">
-      <h1>Hello, I’m <span class="highlight">Shivakumar</span></h1>
-      <h2>Technical Analyst | Data Analytics & Enterprise Systems</h2>
-      <p class="tagline">
-        Bridging analytics, systems, and implementation to deliver reliable,
-        data-driven solutions.
+      <h1 class="hero-title">
+        <span class="line">Hey, I'm <span class="gradient-text">Shivakumar.</span></span>
+        <span class="line subtitle">I build AI systems where the data actually matters.</span>
+      </h1>
+
+      <p class="hero-bio">
+        AI/ML Engineer shipping production LLM applications across <span class="hl">OpenAI</span>,
+        <span class="hl">Claude</span>, and <span class="hl">Gemini</span> -- with a focus on the
+        domains I care about: sports, finance, healthcare, and logistics.
       </p>
+
+      <div class="hero-cta">
+        <a href="#work" class="cta-primary">
+          <span>View my work</span>
+          <i class="fas fa-arrow-down"></i>
+        </a>
+        <a href="mailto:shivakpasem@gmail.com" class="cta-secondary">
+          <span>Let's talk</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="hero-stack">
+        <span class="stack-label">Domains</span>
+        <div class="stack-pills">
+          <span class="pill sports"><i class="fas fa-basketball-ball"></i> Sports</span>
+          <span class="pill finance"><i class="fas fa-chart-line"></i> Finance</span>
+          <span class="pill health"><i class="fas fa-heartbeat"></i> Healthcare</span>
+          <span class="pill log"><i class="fas fa-truck"></i> Logistics</span>
+        </div>
+      </div>
     </div>
   </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-  </nav>
 
   <main>
 
     <!-- ABOUT -->
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a technical analyst with experience across data analytics, business intelligence,
-        and enterprise system support. My background spans academic, research, and commercial
-        environments, where I have worked closely with stakeholders to translate requirements
-        into reliable, well-documented solutions.
-        <br><br>
-        I enjoy working across the full delivery lifecycle from understanding business needs,
-        validating data and system behavior, supporting implementations, and resolving post–go-live
-        issues. I hold a Master’s degree in Data Science and a Bachelor’s degree in Information
-        Technology.
-      </p>
+    <section id="about" class="section">
+      <div class="section-head reveal">
+        <span class="section-num">01</span>
+        <h2>About</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <img src="Shiva_pasem.jpg" alt="Shivakumar Pasem" class="about-photo" />
+          <div class="about-meta">
+            <div class="meta-row">
+              <i class="fas fa-location-dot"></i>
+              <span>United States</span>
+            </div>
+            <div class="meta-row">
+              <i class="fas fa-graduation-cap"></i>
+              <span>M.S. Data Science, UMass Dartmouth</span>
+            </div>
+            <div class="meta-row">
+              <i class="fas fa-briefcase"></i>
+              <span>AI Engineer @ Cognier Inc</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right reveal">
+          <p>
+            I'm an <strong>AI Engineer</strong> who cares more about <em>where</em> models go than just how they're built.
+            Right now I ship production LLM services at Cognier -- RAG, agentic tool-calling, structured extraction --
+            routing across OpenAI, Claude, and Gemini behind a unified API.
+          </p>
+          <p>
+            Before that, I built ML for DHL at Wipro (shipment classifier F1 0.81, delay forecasting with 18% lower MAE),
+            ran A/B tests across route segments and time windows, and did computational research at UMass Boston.
+          </p>
+          <p class="emphasis">
+            But here's what I really care about: <strong>I'm a sports fanatic.</strong> That's not a tagline --
+            it's why my NBA chatbot hits 89% retrieval accuracy and why my Premier League ETL pipeline exists.
+            Finance and healthcare pull me for the same reason: complex data, real stakes, meaningful outcomes.
+          </p>
+
+          <div class="about-quote">
+            <i class="fas fa-quote-left"></i>
+            <p>I don't build models for portfolios. I build them where they matter.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <h2>Technical Skills</h2>
+    <!-- WORK / PROJECTS -->
+    <section id="work" class="section">
+      <div class="section-head reveal">
+        <span class="section-num">02</span>
+        <h2>Selected Work</h2>
+        <div class="section-line"></div>
+      </div>
 
-      <div class="skills-multicolumn">
+      <!-- FEATURED PROJECT -->
+      <article class="featured reveal">
+        <div class="featured-meta">
+          <span class="featured-tag sports"><i class="fas fa-basketball-ball"></i> Sports Analytics</span>
+          <span class="featured-year">2025</span>
+        </div>
+        <h3 class="featured-title">NBA Q&A Chatbot</h3>
+        <p class="featured-desc">
+          A multi-path retrieval system that answers any NBA question -- past stats, current games, or open-ended analysis.
+          Three data paths working in parallel: structured stats lookups via CSV, semantic search through ChromaDB,
+          and live API grounding for current games. Built an intent classifier that routes queries to the right path,
+          lifting accuracy from 65% to 89%. Every response carries source attribution. Prompt injection prevention baked in.
+        </p>
 
-        <div class="skills-group">
-          <h3>Data & Analytics</h3>
-          <div class="skills-list">
-            <div class="skill-item"><span>SQL</span></div>
-            <div class="skill-item"><span>Python (Pandas, NumPy)</span></div>
-            <div class="skill-item"><span>Excel (Analysis & Reporting)</span></div>
-            <div class="skill-item"><span>Data Validation & EDA</span></div>
+        <div class="featured-stats">
+          <div class="fstat">
+            <div class="fstat-num">89<span>%</span></div>
+            <div class="fstat-label">Retrieval Accuracy</div>
+          </div>
+          <div class="fstat">
+            <div class="fstat-num">+24<span>pt</span></div>
+            <div class="fstat-label">Gain from Routing</div>
+          </div>
+          <div class="fstat">
+            <div class="fstat-num">3</div>
+            <div class="fstat-label">Data Paths</div>
           </div>
         </div>
 
-        <div class="skills-group">
-          <h3>Business Intelligence</h3>
-          <div class="skills-list">
-            <div class="skill-item"><span>Power BI</span></div>
-            <div class="skill-item"><span>Tableau</span></div>
-            <div class="skill-item"><span>KPI & Operational Reporting</span></div>
-          </div>
+        <div class="featured-stack">
+          <span>Python</span><span>LangChain</span><span>ChromaDB</span>
+          <span>OpenAI API</span><span>Streamlit</span><span>sentence-transformers</span>
         </div>
 
-        <div class="skills-group">
-          <h3>Systems & Integration</h3>
-          <div class="skills-list">
-            <div class="skill-item"><span>Oracle Cloud ERP</span></div>
-            <div class="skill-item"><span>Oracle Integration Cloud</span></div>
-            <div class="skill-item"><span>REST / SOAP APIs</span></div>
-            <div class="skill-item"><span>JSON / XML</span></div>
-          </div>
+        <div class="featured-cta">
+          <a href="https://github.com/Shivakumarpasem/NBA_chatbot" target="_blank" class="fcta">
+            <i class="fab fa-github"></i> View Source
+          </a>
+          <span class="fcta-divider"></span>
+          <span class="fcta-meta">Production-ready / Open source</span>
         </div>
+      </article>
 
-        <div class="skills-group">
-          <h3>Implementation & Delivery</h3>
-          <div class="skills-list">
-            <div class="skill-item"><span>Requirements Gathering</span></div>
-            <div class="skill-item"><span>Testing & UAT</span></div>
-            <div class="skill-item"><span>Post–Go-Live Support</span></div>
-            <div class="skill-item"><span>Documentation</span></div>
+      <!-- PROJECT GRID -->
+      <div class="work-grid">
+
+        <article class="work-card reveal" data-domain="sports">
+          <div class="card-top">
+            <span class="card-tag sports">Sports</span>
+            <a href="https://github.com/Shivakumarpasem/premier-league-dbt" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
           </div>
-        </div>
+          <h3>Premier League Pipeline</h3>
+          <p>End-to-end ETL: raw football data ingested into S3, transformed via dbt models in Snowflake.
+            Modern data stack producing analytics-ready datasets for performance analysis.</p>
+          <div class="card-stack">
+            <span>AWS S3</span><span>Snowflake</span><span>dbt Cloud</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-domain="finance">
+          <div class="card-top">
+            <span class="card-tag finance">Finance</span>
+            <a href="https://github.com/Shivakumarpasem/stock-market-pipeline" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
+          </div>
+          <h3>Stock Market Pipeline</h3>
+          <p>End-to-end stock market data pipeline on Azure: ingests market data, transforms through
+            Data Factory, serves analytics-ready datasets via Synapse.</p>
+          <div class="card-stack">
+            <span>Azure Data Factory</span><span>Synapse</span><span>Python</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-domain="ai">
+          <div class="card-top">
+            <span class="card-tag ai">AI/ML</span>
+            <a href="https://github.com/Shivakumarpasem/Networking-agent" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
+          </div>
+          <h3>Multi-Step Research Agent</h3>
+          <p>LangGraph state machine with conditional routing across retrieval, vector search, and synthesis.
+            Evaluated with RAGAS across 50 questions on faithfulness, relevance, and context precision.</p>
+          <div class="card-stack">
+            <span>LangGraph</span><span>OpenAI</span><span>Claude</span><span>RAGAS</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-domain="ai">
+          <div class="card-top">
+            <span class="card-tag ai">AI/ML</span>
+          </div>
+          <h3>ReviewSense -- Aspect Sentiment</h3>
+          <p>Fine-tuned BERT classifier for aspect-based sentiment with LoRA adapters. Targeted data
+            augmentation lifted recall on under-represented classes without hurting precision.</p>
+          <div class="card-stack">
+            <span>HuggingFace PEFT</span><span>LoRA</span><span>Transformers</span>
+          </div>
+          <div class="card-metric"><strong>87%</strong> F1 Score</div>
+        </article>
+
+        <article class="work-card reveal" data-domain="ai">
+          <div class="card-top">
+            <span class="card-tag ai">AI/ML</span>
+            <a href="https://github.com/Shivakumarpasem/AI-Email-Agent" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
+          </div>
+          <h3>AI Email Agent</h3>
+          <p>Autonomous email agent using LLM-powered reasoning for classification, response generation,
+            and workflow automation.</p>
+          <div class="card-stack">
+            <span>Python</span><span>LLM APIs</span><span>Agentic</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-domain="finance">
+          <div class="card-top">
+            <span class="card-tag finance">Finance</span>
+            <a href="https://github.com/Shivakumarpasem/Cournot-Oligopoly-Model" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
+          </div>
+          <h3>Cournot Oligopoly Simulation</h3>
+          <p>Parameterizable economic simulation models comparing outcomes across pricing and cost
+            scenarios. Validated against theoretical equilibrium predictions.</p>
+          <div class="card-stack">
+            <span>Python</span><span>NumPy</span><span>Jupyter</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal" data-domain="engineering">
+          <div class="card-top">
+            <span class="card-tag engineering">Engineering</span>
+            <a href="https://github.com/Shivakumarpasem/DotNetLibrarySandbox" target="_blank" class="card-link"><i class="fab fa-github"></i></a>
+          </div>
+          <h3>C# Platform API Library</h3>
+          <p>Class library practicing platform-style API design with xUnit test coverage and
+            BenchmarkDotNet performance benchmarks.</p>
+          <div class="card-stack">
+            <span>C#</span><span>xUnit</span><span>BenchmarkDotNet</span>
+          </div>
+        </article>
 
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience">
-      <h2>Experience</h2>
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <span class="section-num">03</span>
+        <h2>Experience</h2>
+        <div class="section-line"></div>
+      </div>
 
-      <div class="experience-cards">
-
-        <div class="experience-card">
-          <div class="exp-icon"><i class="fas fa-cogs"></i></div>
-          <div class="exp-content">
-            <div class="exp-header">
-              <span class="exp-company">Wipro Technologies</span>
-              <span class="exp-role">ERP & Integration Support Analyst</span>
-              <span class="exp-dates">Nov 2021 – Dec 2022</span>
+      <div class="timeline">
+        <div class="time-item reveal">
+          <div class="time-side">
+            <div class="time-marker current">
+              <span class="marker-pulse"></span>
             </div>
-            <ul class="exp-list">
-              <li>Supported Oracle Cloud ERP and integration implementations for finance and procurement teams in a production environment.</li>
-              <li>Resolved ServiceNow incidents by troubleshooting Oracle Integration Cloud flows, SQL logic, and API payloads.</li>
-              <li>Validated end-to-end data flows for Accounts Payable and Accounts Receivable through testing and reconciliation.</li>
-              <li>Worked with business and technical teams to clarify requirements, test enhancements, and support deployments.</li>
-              <li>Maintained technical documentation to support audit readiness and ongoing system support.</li>
-            </ul>
+            <div class="time-date">Dec 2025 - Now</div>
+          </div>
+          <div class="time-body">
+            <div class="time-head">
+              <h3>AI Engineer</h3>
+              <span class="time-co">Cognier Inc</span>
+            </div>
+            <p>Shipping the LLM layer for internal teams and external users -- a unified abstraction over OpenAI, Claude, and Gemini that powers RAG, structured extraction, and agentic tool-calling. Day to day: tuning retrieval, writing eval sets, and making sure things don't break when models change.</p>
+            <div class="time-tags">
+              <span>LLM Routing</span>
+              <span>Vertex AI Pipelines</span>
+              <span>Go REST APIs</span>
+              <span>Golden-Set Eval</span>
+            </div>
           </div>
         </div>
 
-        <div class="experience-card">
-          <div class="exp-icon"><i class="fas fa-university"></i></div>
-          <div class="exp-content">
-            <div class="exp-header">
-              <span class="exp-company">University of Massachusetts Dartmouth</span>
-              <span class="exp-role">Data & Reporting Analyst</span>
-              <span class="exp-dates">Aug 2023 – Dec 2024</span>
+        <div class="time-item reveal">
+          <div class="time-side">
+            <div class="time-marker"></div>
+            <div class="time-date">Feb - Nov 2025</div>
+          </div>
+          <div class="time-body">
+            <div class="time-head">
+              <h3>Research Assistant</h3>
+              <span class="time-co">UMass Boston -- Computational Data Science</span>
             </div>
-            <ul class="exp-list">
-              <li>Collaborated with administrative stakeholders to gather reporting requirements and deliver SQL- and Tableau-based reports.</li>
-              <li>Validated and standardized datasets to improve the accuracy and reliability of recurring reports.</li>
-              <li>Reduced manual rework by organizing reporting logic and documentation for repeatable use.</li>
-            </ul>
+            <p>Built simulation tooling for game-theory research. The work behind this role lives in the <a href="https://github.com/Shivakumarpasem/Cournot-Oligopoly-Model" target="_blank" class="time-link">Cournot Oligopoly Model <i class="fas fa-arrow-up-right-from-square"></i></a> -- parameterizable Python simulations validated against theoretical equilibria across parameter sweeps.</p>
           </div>
         </div>
 
-        <div class="experience-card">
-          <div class="exp-icon"><i class="fas fa-chart-line"></i></div>
-          <div class="exp-content">
-            <div class="exp-header">
-              <span class="exp-company">University of Massachusetts Boston</span>
-              <span class="exp-role">Research Data Analyst (Applied Analytics)</span>
-              <span class="exp-dates">Feb 2025 – Present</span>
+        <div class="time-item reveal">
+          <div class="time-side">
+            <div class="time-marker"></div>
+            <div class="time-date">Aug 2023 - Dec 2024</div>
+          </div>
+          <div class="time-body">
+            <div class="time-head">
+              <h3>Data & Reporting Analyst</h3>
+              <span class="time-co">UMass Dartmouth</span>
             </div>
-            <ul class="exp-list">
-              <li>Built Cournot oligopoly simulation models in Python to compare outcomes across pricing and cost scenarios.</li>
-              <li>Used Excel to structure outputs, perform scenario analysis, and communicate results clearly.</li>
-              <li>Documented assumptions and analytical workflows to ensure transparency and reproducibility.</li>
-            </ul>
+            <p>Where I learned that clean data and consistent KPI definitions matter more than fancy dashboards. Built SQL and Tableau reporting for campus operations, automated the boring parts in Python, and wrote SQL reconciliation patterns reused across multiple report cycles.</p>
           </div>
         </div>
 
+        <div class="time-item reveal">
+          <div class="time-side">
+            <div class="time-marker"></div>
+            <div class="time-date">Nov 2021 - Dec 2022</div>
+          </div>
+          <div class="time-body">
+            <div class="time-head">
+              <h3>Software Engineer, ML</h3>
+              <span class="time-co">Wipro Technologies (DHL)</span>
+            </div>
+            <p>My first taste of ML in production -- two models DHL operations actually used for weekly planning. A shipment exception classifier (F1 0.81) and a delay forecast model (18% lower MAE vs baseline). This is also where I learned to take A/B testing seriously: stratified splits across route segments, drift monitoring post-deployment, the whole loop.</p>
+            <div class="time-tags">
+              <span>F1 0.81 Classifier</span>
+              <span>18% MAE Reduction</span>
+              <span>A/B Testing</span>
+              <span>Drift Monitoring</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>Projects</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <span class="section-num">04</span>
+        <h2>Toolkit</h2>
+        <div class="section-line"></div>
+      </div>
 
-      <div class="projects-container">
-
-        <div class="project-card">
-          <h3>Healthcare Utilization & Referral Analytics</h3>
-          <p class="project-subtitle">SQL • Power BI • Snowflake • dbt</p>
-          <p class="project-description">
-            End-to-end healthcare analytics project focused on understanding patient referrals,
-            appointment utilization, and provider activity to improve operational visibility.
-          </p>
-          <ul class="project-points">
-            <li>Modeled referral and utilization datasets using SQL and dbt.</li>
-            <li>Built KPI-driven Power BI dashboards highlighting trends and operational bottlenecks.</li>
-            <li>Implemented data validation checks to ensure reliable reporting.</li>
-          </ul>
-          <p class="project-impact">
-            <strong>Demonstrates:</strong> Healthcare analytics exposure, KPI design, BI reporting,
-            and stakeholder-focused insights.
-          </p>
+      <div class="skills-grid">
+        <div class="skill-block reveal">
+          <div class="skill-icon"><i class="fas fa-brain"></i></div>
+          <h3>LLM & Agents</h3>
+          <p>OpenAI GPT-4o, Claude, Gemini, LangChain, LangGraph, ChromaDB, function calling, structured outputs, streaming</p>
         </div>
-
-        <div class="project-card">
-          <h3>Premier League Data Analytics  <a href="https://github.com/Shivakumarpasem/premier-league-dbt" target="_blank"><i class="fab fa-github"></i></a></h3>
-          <p class="project-subtitle">Python • SQL • Cloud Storage • Reporting</p>
-          <p class="project-description">
-            Analytics pipeline built to transform raw football match and player data into
-            structured datasets and comparative performance insights.
-          </p>
-          <ul class="project-points">
-            <li>Built Python and SQL pipelines to ingest, clean, and transform sports data.</li>
-            <li>Modeled performance metrics for longitudinal and comparative analysis.</li>
-            <li>Focused on reproducibility, data quality, and clear reporting.</li>
-          </ul>
-          <p class="project-impact">
-            <strong>Demonstrates:</strong> End-to-end analytics workflow, data transformation,
-            and insight communication.
-          </p>
+        <div class="skill-block reveal">
+          <div class="skill-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>LLM Production</h3>
+          <p>Model routing, guardrails, hallucination handling, golden-set eval, prompt injection defense, refusal handling</p>
         </div>
-
+        <div class="skill-block reveal">
+          <div class="skill-icon"><i class="fas fa-flask-vial"></i></div>
+          <h3>ML & A/B Testing</h3>
+          <p>PyTorch, PEFT (LoRA/QLoRA), scikit-learn, XGBoost, stratified splits, drift monitoring, RAGAS, LangSmith</p>
+        </div>
+        <div class="skill-block reveal">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>Languages & Backend</h3>
+          <p>Python, Go, Java, C#, TypeScript, SQL, FastAPI, REST APIs, Docker, GitHub Actions, Jenkins CI/CD</p>
+        </div>
+        <div class="skill-block reveal">
+          <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+          <h3>Data & Cloud</h3>
+          <p>AWS (S3, Glue, Athena, SageMaker), GCP (Vertex AI, BigQuery), Azure (Data Factory, Synapse), Snowflake, dbt, Databricks</p>
+        </div>
+        <div class="skill-block reveal">
+          <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Evaluation & Observability</h3>
+          <p>RAGAS (faithfulness, relevance, precision), LangSmith tracing, golden-set evaluation, prompt versioning</p>
+        </div>
       </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>M.S. Data Science</strong> – University of Massachusetts Dartmouth</li>
-        <li><strong>B.S. Information Technology</strong> – JNTU Hyderabad</li>
-      </ul>
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="section">
+      <div class="section-head reveal">
+        <span class="section-num">05</span>
+        <h2>Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="certs-grid">
+        <a href="https://learn.microsoft.com/en-in/users/shivakp-8429/credentials/ba8f8454f99d8f" target="_blank" class="cert-card reveal">
+          <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+          <div class="cert-body">
+            <h3>Microsoft Certified</h3>
+            <p>Issued by Microsoft Learn</p>
+            <span class="cert-verify">Verify credential <i class="fas fa-arrow-up-right-from-square"></i></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- EDUCATION + CONTACT -->
+    <section id="end" class="section">
+      <div class="end-grid">
+        <div class="end-edu reveal">
+          <div class="section-head small">
+            <span class="section-num">06</span>
+            <h2>Education</h2>
+          </div>
+          <div class="edu-item">
+            <h3>M.S. Data Science</h3>
+            <p>University of Massachusetts Dartmouth</p>
+            <span>GPA 3.82 / 4.00 -- Jan 2023 - Jan 2025</span>
+          </div>
+          <div class="edu-item">
+            <h3>B.Tech Information Technology</h3>
+            <p>JNTU Hyderabad, India</p>
+            <span>2017 - 2021</span>
+          </div>
+        </div>
+
+        <div class="end-contact reveal">
+          <div class="section-head small">
+            <span class="section-num">07</span>
+            <h2>Get in touch</h2>
+          </div>
+          <p class="contact-msg">
+            I'm always open to interesting AI/ML work -- especially in sports, finance, healthcare,
+            or anywhere data complexity meets real impact. Drop me a line.
+          </p>
+          <a href="mailto:shivakpasem@gmail.com" class="contact-mail">
+            <i class="fas fa-envelope"></i>
+            shivakpasem@gmail.com
+          </a>
+          <div class="contact-social">
+            <a href="https://www.linkedin.com/in/pasem-sk/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Shivakumarpasem" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="tel:+17743208269"><i class="fas fa-phone"></i> (774) 320-8269</a>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
 
   <footer>
-    <p>Contact: <a href="mailto:shivakpasem@gmail.com">shivakpasem@gmail.com</a></p>
+    <div class="foot-inner">
+      <span>Designed and built by Shivakumar Pasem -- 2026</span>
+      <span class="foot-loc">United States</span>
+    </div>
   </footer>
 
+  <script>
+    // Scroll reveal
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // Nav scroll
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 30);
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) t.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Mouse-tracked glow
+    document.addEventListener('mousemove', (e) => {
+      const g1 = document.querySelector('.bg-glow-1');
+      if (g1 && window.scrollY < 800) {
+        g1.style.transform = `translate(${e.clientX * 0.02}px, ${e.clientY * 0.02}px)`;
+      }
+    });
+  </script>
 </body>
 </html>
